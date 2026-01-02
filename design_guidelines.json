@@ -1,0 +1,161 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "ACCIO",
+      "tone": "Trustworthy, Community-Driven, Efficient, Modern Academic",
+      "theme_strategy": "Light Mode Primary (Clean Utility) with Dark Mode Toggle (Night Study)",
+      "core_values": ["Empathy", "Speed", "Clarity"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Outfit, sans-serif",
+        "body": "DM Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-semibold",
+        "body_lg": "text-lg md:text-xl leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm font-medium tracking-wide uppercase text-muted-foreground"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@300;500;700;900&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#1E3A8A",
+          "foreground": "#FFFFFF",
+          "description": "Academic Blue - Trust & Authority"
+        },
+        "secondary": {
+          "DEFAULT": "#F97316",
+          "foreground": "#FFFFFF",
+          "description": "Vibrant Coral - Action & Urgency (Lost)"
+        },
+        "accent": {
+          "DEFAULT": "#84CC16",
+          "foreground": "#000000",
+          "description": "Neon Lime - Success & Found"
+        },
+        "background": {
+          "light": "#F8FAFC",
+          "dark": "#0F172A"
+        },
+        "surface": {
+          "light": "#FFFFFF",
+          "dark": "#1E293B"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900",
+        "card_hover": "hover:bg-gradient-to-br hover:from-white hover:to-slate-50 dark:hover:from-slate-800 dark:hover:to-slate-900"
+      }
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_padding": "py-16 md:py-24",
+      "card_padding": "p-6 md:p-8"
+    },
+    "visual_enhancers": {
+      "radius": "rounded-xl",
+      "shadows": {
+        "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.08)] transition-all duration-300",
+        "floating": "shadow-[0_20px_40px_rgba(30,58,138,0.15)]"
+      },
+      "borders": "border border-slate-200 dark:border-slate-800",
+      "glass": "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-white/20"
+    },
+    "motion": {
+      "transition_base": "transition-all duration-300 ease-out",
+      "hover_lift": "hover:-translate-y-1",
+      "active_press": "active:scale-95",
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 }
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-full font-medium shadow-lg shadow-blue-900/20 transition-transform hover:scale-105 active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 h-11 px-8 rounded-full font-medium shadow-lg shadow-orange-500/20",
+      "outline": "border-2 border-slate-200 hover:border-primary hover:text-primary bg-transparent h-11 px-8 rounded-full font-medium"
+    },
+    "cards": {
+      "item_card": "group relative overflow-hidden bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300",
+      "feature_card": "p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-100 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 transition-colors"
+    },
+    "inputs": {
+      "base": "h-12 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-primary/20 focus:border-primary rounded-lg transition-all"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1763890763432-17c9a529da20?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Students walking on campus",
+        "usage": "Hero section background or main visual"
+      },
+      "community_highlight": {
+        "url": "https://images.unsplash.com/photo-1758270705639-9727f350f026?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Students taking selfie",
+        "usage": "Community/About section"
+      },
+      "lost_item_examples": [
+        {
+          "url": "https://images.unsplash.com/photo-1697267322976-5c3d05d07d96?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Lost Wallet",
+          "category": "Personal Items"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1621735320171-a682f45d7172?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Lost Bag",
+          "category": "Bags"
+        }
+      ],
+      "success_moment": {
+        "url": "https://images.pexels.com/photos/6146978/pexels-photo-6146978.jpeg",
+        "alt": "Happy students",
+        "usage": "Success stories or testimonials"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_set": ["Search", "MapPin", "Bell", "ShieldCheck", "Award", "MessageCircle"]
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "grid": "Bento Grid (Mode A)",
+      "hero_style": "Split screen: Left text (60%), Right 3D/Image composition (40%)",
+      "features_style": "3-column grid with hover-lift cards"
+    },
+    "dashboard": {
+      "grid": "Control Room Grid (Mode B)",
+      "sidebar": "Fixed left sidebar (w-64) with glassmorphism",
+      "content_area": "p-8 bg-slate-50/50 dark:bg-slate-950"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge' immediately.",
+    "2. FONTS: Add the Google Fonts import to index.css immediately.",
+    "3. THEME: Implement the 'Academic Blue' and 'Vibrant Coral' colors in tailwind.config.js.",
+    "4. COMPONENTS: Use Shadcn for complex interactive elements (Dialog, Form, Select) but style them with the 'rounded-xl' and 'border-slate-200' aesthetic.",
+    "5. IMAGES: Use the provided Unsplash/Pexels URLs. DO NOT use placeholders.",
+    "6. MOTION: Apply 'hover:-translate-y-1' to all cards. Use framer-motion for page transitions.",
+    "7. ACCESSIBILITY: Ensure text contrast is high. Use 'text-slate-900' for headings and 'text-slate-600' for body text on light backgrounds.",
+    "8. DATA-TESTID: Add data-testid attributes to all buttons, inputs, and cards."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'Bootstrap' looks. Use generous padding (p-8+).",
+    "Never use pure black (#000000). Use Slate-900 or Blue-950.",
+    "Buttons must be pill-shaped (rounded-full) for a modern app feel.",
+    "Use 'backdrop-blur' for sticky headers and overlays.",
+    "Forms should be split into steps if they have more than 4 fields."
+  ]
+}
